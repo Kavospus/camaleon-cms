@@ -19,7 +19,7 @@ module CamaleonCms::CamaleonHelper
     # Thread.abort_on_exception=true
     # Thread.new do
     HtmlMailer.sender(email, subject, content, from, attachs, cama_root_url, current_site, template_name, layout_name, {}).deliver_now
-    ActiveRecord::Base.connection.close
+    # ActiveRecord::Base.connection.close
     # end
   end
 
